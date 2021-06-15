@@ -1,0 +1,74 @@
+[
+    {
+        "label": "variancia_populacional",
+        "kind": 5,
+        "importPath": "Calculadora01",
+        "description": "Calculadora01",
+        "peekOfCode": "variancia_populacional = 0\nvariancia_amostral = 0\nmedia = 0\nnumero_de_elementos = int(input(\"Entre o número de elementos: \"))\nnumero_de_classes = int(input(\"Entre o número de classes: \"))\nfrequencias = []\npontos_medios = []\nfor i in range(numero_de_classes):\n    frequencias.append(float(input(\"Entre a frequência da classe: \")))\nfor i in range(numero_de_classes):",
+        "detail": "Calculadora01",
+        "documentation": {}
+    },
+    {
+        "label": "variancia_amostral",
+        "kind": 5,
+        "importPath": "Calculadora01",
+        "description": "Calculadora01",
+        "peekOfCode": "variancia_amostral = 0\nmedia = 0\nnumero_de_elementos = int(input(\"Entre o número de elementos: \"))\nnumero_de_classes = int(input(\"Entre o número de classes: \"))\nfrequencias = []\npontos_medios = []\nfor i in range(numero_de_classes):\n    frequencias.append(float(input(\"Entre a frequência da classe: \")))\nfor i in range(numero_de_classes):\n    #li = float(input(\"Entre o limite inferior da classe: \"))",
+        "detail": "Calculadora01",
+        "documentation": {}
+    },
+    {
+        "label": "media",
+        "kind": 5,
+        "importPath": "Calculadora01",
+        "description": "Calculadora01",
+        "peekOfCode": "media = 0\nnumero_de_elementos = int(input(\"Entre o número de elementos: \"))\nnumero_de_classes = int(input(\"Entre o número de classes: \"))\nfrequencias = []\npontos_medios = []\nfor i in range(numero_de_classes):\n    frequencias.append(float(input(\"Entre a frequência da classe: \")))\nfor i in range(numero_de_classes):\n    #li = float(input(\"Entre o limite inferior da classe: \"))\n    #Li = float(input(\"Entre o limite superior da classe: \"))",
+        "detail": "Calculadora01",
+        "documentation": {}
+    },
+    {
+        "label": "numero_de_elementos",
+        "kind": 5,
+        "importPath": "Calculadora01",
+        "description": "Calculadora01",
+        "peekOfCode": "numero_de_elementos = int(input(\"Entre o número de elementos: \"))\nnumero_de_classes = int(input(\"Entre o número de classes: \"))\nfrequencias = []\npontos_medios = []\nfor i in range(numero_de_classes):\n    frequencias.append(float(input(\"Entre a frequência da classe: \")))\nfor i in range(numero_de_classes):\n    #li = float(input(\"Entre o limite inferior da classe: \"))\n    #Li = float(input(\"Entre o limite superior da classe: \"))\n    pontos_medios.append(float(input(\"Entre o limite superior da classe: \")))",
+        "detail": "Calculadora01",
+        "documentation": {}
+    },
+    {
+        "label": "numero_de_classes",
+        "kind": 5,
+        "importPath": "Calculadora01",
+        "description": "Calculadora01",
+        "peekOfCode": "numero_de_classes = int(input(\"Entre o número de classes: \"))\nfrequencias = []\npontos_medios = []\nfor i in range(numero_de_classes):\n    frequencias.append(float(input(\"Entre a frequência da classe: \")))\nfor i in range(numero_de_classes):\n    #li = float(input(\"Entre o limite inferior da classe: \"))\n    #Li = float(input(\"Entre o limite superior da classe: \"))\n    pontos_medios.append(float(input(\"Entre o limite superior da classe: \")))\nfor i in range(numero_de_classes):",
+        "detail": "Calculadora01",
+        "documentation": {}
+    },
+    {
+        "label": "frequencias",
+        "kind": 5,
+        "importPath": "Calculadora01",
+        "description": "Calculadora01",
+        "peekOfCode": "frequencias = []\npontos_medios = []\nfor i in range(numero_de_classes):\n    frequencias.append(float(input(\"Entre a frequência da classe: \")))\nfor i in range(numero_de_classes):\n    #li = float(input(\"Entre o limite inferior da classe: \"))\n    #Li = float(input(\"Entre o limite superior da classe: \"))\n    pontos_medios.append(float(input(\"Entre o limite superior da classe: \")))\nfor i in range(numero_de_classes):\n    media = media + ((pontos_medios[i])*(frequencias[i]))",
+        "detail": "Calculadora01",
+        "documentation": {}
+    },
+    {
+        "label": "pontos_medios",
+        "kind": 5,
+        "importPath": "Calculadora01",
+        "description": "Calculadora01",
+        "peekOfCode": "pontos_medios = []\nfor i in range(numero_de_classes):\n    frequencias.append(float(input(\"Entre a frequência da classe: \")))\nfor i in range(numero_de_classes):\n    #li = float(input(\"Entre o limite inferior da classe: \"))\n    #Li = float(input(\"Entre o limite superior da classe: \"))\n    pontos_medios.append(float(input(\"Entre o limite superior da classe: \")))\nfor i in range(numero_de_classes):\n    media = media + ((pontos_medios[i])*(frequencias[i]))\nmedia = media/numero_de_elementos",
+        "detail": "Calculadora01",
+        "documentation": {}
+    },
+    {
+        "label": "media",
+        "kind": 5,
+        "importPath": "Calculadora01",
+        "description": "Calculadora01",
+        "peekOfCode": "media = media/numero_de_elementos\nfor i in range(numero_de_classes):\n    x = pontos_medios[i]\n    f = frequencias[i]\n    variancia_populacional = variancia_populacional + (((pontos_medios[i]-media)**2)*frequencias[i])/numero_de_elementos\n    variancia_amostral = variancia_amostral + (((pontos_medios[i]-media)**2)*frequencias[i])/(numero_de_elementos-1)\nprint(\"frequencia:\",frequencias)\nprint(\"pontos medios:\",pontos_medios)\nprint(\"media =\",media)\nprint(\"variancia_populacional =\",variancia_populacional)",
+        "detail": "Calculadora01",
+        "documentation": {}
+    }
+]

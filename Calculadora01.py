@@ -107,5 +107,7 @@ print("Numero de classes: ",numero_de_classes,"\nFrequencias: ",frequencias,"\nF
 
 #& Plotando Gráficos
 
+#* Eixo_x, Eixo_y
 plt.plot(pontos_medios, frequencias)
 plt.show()
+

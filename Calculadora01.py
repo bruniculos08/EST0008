@@ -1,29 +1,24 @@
 from math import ceil
 from math import log10
 from matplotlib import pyplot as plt
+from math import sqrt
 
-variancia_populacional = 0
-variancia_amostral = 0
-media = 0
-numero_de_elementos = 306
-#numero_de_classes = int(input("Entre o número de classes: "))
+
+variancia_populacional, variancia_amostral, media, variancia_amostral, mediana, k, numero_de_elementos = 0, 0, 0, 0, 0, 0, 0
+frequencias_acumuladas, Li, li, quartil, classe_quartil, percentil, classe_percentil = [], [], [], [], [], [], []
+
 #frequencias = [28,39,51,68,74,27,29,10,4,3,2]
 frequencias = [26,32,59,70,56,20,13,11,7,9,3]
-frequencias_acumuladas = []
 pontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]
-li = []
-Li = []
-mediana = 0
-quartil = []
-classe_quartil = []
-classe_percentil = []
-percentil = []
-k = 0
-h = 0.4
-j = 0
 
+
+numero_de_classes = len(frequencias)
 #numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))
-numero_de_classes = 11
+
+for i in range(numero_de_classes): 
+    numero_de_elementos = numero_de_elementos + frequencias[i] 
+
+#& Calculando frequencias_acumuladas
 
 for i in range(numero_de_classes):
 #    frequencias.append(int(input("Digite a frequência da classe:")))
@@ -32,19 +27,29 @@ for i in range(numero_de_classes):
     elif i == 0:
         frequencias_acumuladas.append(frequencias[i])
 
+
+#& Receber dados (não nessário)
+
 #for i in range(numero_de_classes):
     #li.append(float(input("Entre o limite inferior da classe: ")))
     #Li.append(float(input("Entre o limite superior da classe: ")))
     #pontos_medios.append(float((Li[i]+li[i])/2.0))
     #pontos_medios.append(float(input("Digite o ponto medio da classe: ")))
 
+#& Calculando Média
+
 for i in range(numero_de_classes):
     media = media + ((pontos_medios[i])*(frequencias[i]))
 media = media/numero_de_elementos
 
+#& Calculando Variância (populacional e amostral) e Erro Padrão
+
 for i in range(numero_de_classes):
     variancia_populacional = variancia_populacional + (((pontos_medios[i]-media)**2)*frequencias[i])/numero_de_elementos
     variancia_amostral = variancia_amostral + (((pontos_medios[i]-media)**2)*frequencias[i])/(numero_de_elementos-1)
+erro_padrao_amostral = sqrt(variancia_amostral)
+
+#& Calculando Mediana
 
 for i in range(numero_de_classes):
     if frequencias_acumuladas[i] > (numero_de_elementos)/2:
@@ -56,6 +61,8 @@ for i in range(numero_de_classes):
         #h = Li[i] - li[i]
         mediana = lt + (((numero_de_elementos)/2) - frequencias_acumuladas[i-1])*(h/frequencias[i])
         break
+
+#& Calculando Quartis
 
 for i in range(numero_de_classes):
     if frequencias_acumuladas[i] > (k+1)*(numero_de_elementos)/4:
@@ -73,6 +80,8 @@ for i in range(numero_de_classes):
         i = 0
     if k == 3:
         break
+
+#& Calculando Percentis
 
 k = 9
 for i in range(numero_de_classes):
@@ -92,16 +101,11 @@ for i in range(numero_de_classes):
     if k > 89:
         break
 
-print("numero de classes: ",numero_de_classes)
-print("frequencias: ",frequencias)
-print("frequencias acumuladas: ",frequencias_acumuladas)
-print("pontos medios:",pontos_medios)
-print("media =",media)
-print("mediana =",mediana)
-print("variancia_populacional =",variancia_populacional)
-print("variancia_amostral =",variancia_amostral)
-print("quartis: ", quartil)
-print("percentis: ", percentil)
+print("Numero de classes: ",numero_de_classes,"\nFrequencias: ",frequencias,"\nFrequencias Acumuladas: ",frequencias_acumuladas,
+"\nPontos Medios:",pontos_medios, "\nMedia = ",media,"\nMediana = ",mediana,"\nVariancia Populacional = ",variancia_populacional,
+"\nVariancia Amostral = ",variancia_amostral,"\nQuartis: ", quartil,"\nPercentis: ", percentil)
+
+#& Plotando Gráficos
 
 plt.plot(pontos_medios, frequencias)
 plt.show()

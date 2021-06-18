@@ -16,6 +16,14 @@
         "documentation": {}
     },
     {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "pyplot",
         "importPath": "matplotlib",
         "description": "matplotlib",
@@ -24,56 +32,11 @@
         "documentation": {}
     },
     {
-        "label": "variancia_populacional",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "variancia_populacional = 0\nvariancia_amostral = 0\nmedia = 0\nnumero_de_elementos = 306\n#numero_de_classes = int(input(\"Entre o número de classes: \"))\n#frequencias = [28,39,51,68,74,27,29,10,4,3,2]\nfrequencias = [26,32,59,70,56,20,13,11,7,9,3]\nfrequencias_acumuladas = []\npontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nli = []",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "variancia_amostral",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "variancia_amostral = 0\nmedia = 0\nnumero_de_elementos = 306\n#numero_de_classes = int(input(\"Entre o número de classes: \"))\n#frequencias = [28,39,51,68,74,27,29,10,4,3,2]\nfrequencias = [26,32,59,70,56,20,13,11,7,9,3]\nfrequencias_acumuladas = []\npontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nli = []\nLi = []",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "media",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "media = 0\nnumero_de_elementos = 306\n#numero_de_classes = int(input(\"Entre o número de classes: \"))\n#frequencias = [28,39,51,68,74,27,29,10,4,3,2]\nfrequencias = [26,32,59,70,56,20,13,11,7,9,3]\nfrequencias_acumuladas = []\npontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nli = []\nLi = []\nmediana = 0",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "numero_de_elementos",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "numero_de_elementos = 306\n#numero_de_classes = int(input(\"Entre o número de classes: \"))\n#frequencias = [28,39,51,68,74,27,29,10,4,3,2]\nfrequencias = [26,32,59,70,56,20,13,11,7,9,3]\nfrequencias_acumuladas = []\npontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nli = []\nLi = []\nmediana = 0\nquartil = []",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "#numero_de_classes",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "#numero_de_classes = int(input(\"Entre o número de classes: \"))\n#frequencias = [28,39,51,68,74,27,29,10,4,3,2]\nfrequencias = [26,32,59,70,56,20,13,11,7,9,3]\nfrequencias_acumuladas = []\npontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nli = []\nLi = []\nmediana = 0\nquartil = []\nclasse_quartil = []",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
         "label": "#frequencias",
         "kind": 5,
         "importPath": "Calculadora01",
         "description": "Calculadora01",
-        "peekOfCode": "#frequencias = [28,39,51,68,74,27,29,10,4,3,2]\nfrequencias = [26,32,59,70,56,20,13,11,7,9,3]\nfrequencias_acumuladas = []\npontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nli = []\nLi = []\nmediana = 0\nquartil = []\nclasse_quartil = []\nclasse_percentil = []",
+        "peekOfCode": "#frequencias = [28,39,51,68,74,27,29,10,4,3,2]\nfrequencias = [26,32,59,70,56,20,13,11,7,9,3]\npontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nnumero_de_classes = len(frequencias)\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nfor i in range(numero_de_classes): \n    numero_de_elementos = numero_de_elementos + frequencias[i] \n#& Calculando frequencias_acumuladas\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))",
         "detail": "Calculadora01",
         "documentation": {}
     },
@@ -82,16 +45,7 @@
         "kind": 5,
         "importPath": "Calculadora01",
         "description": "Calculadora01",
-        "peekOfCode": "frequencias = [26,32,59,70,56,20,13,11,7,9,3]\nfrequencias_acumuladas = []\npontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nli = []\nLi = []\nmediana = 0\nquartil = []\nclasse_quartil = []\nclasse_percentil = []\npercentil = []",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "frequencias_acumuladas",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "frequencias_acumuladas = []\npontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nli = []\nLi = []\nmediana = 0\nquartil = []\nclasse_quartil = []\nclasse_percentil = []\npercentil = []\nk = 0",
+        "peekOfCode": "frequencias = [26,32,59,70,56,20,13,11,7,9,3]\npontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nnumero_de_classes = len(frequencias)\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nfor i in range(numero_de_classes): \n    numero_de_elementos = numero_de_elementos + frequencias[i] \n#& Calculando frequencias_acumuladas\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))\n    if i > 0:",
         "detail": "Calculadora01",
         "documentation": {}
     },
@@ -100,106 +54,7 @@
         "kind": 5,
         "importPath": "Calculadora01",
         "description": "Calculadora01",
-        "peekOfCode": "pontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nli = []\nLi = []\nmediana = 0\nquartil = []\nclasse_quartil = []\nclasse_percentil = []\npercentil = []\nk = 0\nh = 0.4",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "li",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "li = []\nLi = []\nmediana = 0\nquartil = []\nclasse_quartil = []\nclasse_percentil = []\npercentil = []\nk = 0\nh = 0.4\nj = 0",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "Li",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "Li = []\nmediana = 0\nquartil = []\nclasse_quartil = []\nclasse_percentil = []\npercentil = []\nk = 0\nh = 0.4\nj = 0\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "mediana",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "mediana = 0\nquartil = []\nclasse_quartil = []\nclasse_percentil = []\npercentil = []\nk = 0\nh = 0.4\nj = 0\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nnumero_de_classes = 11",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "quartil",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "quartil = []\nclasse_quartil = []\nclasse_percentil = []\npercentil = []\nk = 0\nh = 0.4\nj = 0\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nnumero_de_classes = 11\nfor i in range(numero_de_classes):",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "classe_quartil",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "classe_quartil = []\nclasse_percentil = []\npercentil = []\nk = 0\nh = 0.4\nj = 0\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nnumero_de_classes = 11\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "classe_percentil",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "classe_percentil = []\npercentil = []\nk = 0\nh = 0.4\nj = 0\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nnumero_de_classes = 11\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))\n    if i > 0:",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "percentil",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "percentil = []\nk = 0\nh = 0.4\nj = 0\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nnumero_de_classes = 11\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))\n    if i > 0:\n        frequencias_acumuladas.append(frequencias[i]+frequencias_acumuladas[i-1])",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "k",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "k = 0\nh = 0.4\nj = 0\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nnumero_de_classes = 11\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))\n    if i > 0:\n        frequencias_acumuladas.append(frequencias[i]+frequencias_acumuladas[i-1])\n    elif i == 0:",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "h",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "h = 0.4\nj = 0\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nnumero_de_classes = 11\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))\n    if i > 0:\n        frequencias_acumuladas.append(frequencias[i]+frequencias_acumuladas[i-1])\n    elif i == 0:\n        frequencias_acumuladas.append(frequencias[i])",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "j",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "j = 0\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nnumero_de_classes = 11\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))\n    if i > 0:\n        frequencias_acumuladas.append(frequencias[i]+frequencias_acumuladas[i-1])\n    elif i == 0:\n        frequencias_acumuladas.append(frequencias[i])\n#for i in range(numero_de_classes):",
-        "detail": "Calculadora01",
-        "documentation": {}
-    },
-    {
-        "label": "#numero_de_classes",
-        "kind": 5,
-        "importPath": "Calculadora01",
-        "description": "Calculadora01",
-        "peekOfCode": "#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nnumero_de_classes = 11\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))\n    if i > 0:\n        frequencias_acumuladas.append(frequencias[i]+frequencias_acumuladas[i-1])\n    elif i == 0:\n        frequencias_acumuladas.append(frequencias[i])\n#for i in range(numero_de_classes):\n    #li.append(float(input(\"Entre o limite inferior da classe: \")))",
+        "peekOfCode": "pontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]\nnumero_de_classes = len(frequencias)\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nfor i in range(numero_de_classes): \n    numero_de_elementos = numero_de_elementos + frequencias[i] \n#& Calculando frequencias_acumuladas\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))\n    if i > 0:\n        frequencias_acumuladas.append(frequencias[i]+frequencias_acumuladas[i-1])",
         "detail": "Calculadora01",
         "documentation": {}
     },
@@ -208,7 +63,16 @@
         "kind": 5,
         "importPath": "Calculadora01",
         "description": "Calculadora01",
-        "peekOfCode": "numero_de_classes = 11\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))\n    if i > 0:\n        frequencias_acumuladas.append(frequencias[i]+frequencias_acumuladas[i-1])\n    elif i == 0:\n        frequencias_acumuladas.append(frequencias[i])\n#for i in range(numero_de_classes):\n    #li.append(float(input(\"Entre o limite inferior da classe: \")))\n    #Li.append(float(input(\"Entre o limite superior da classe: \")))",
+        "peekOfCode": "numero_de_classes = len(frequencias)\n#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nfor i in range(numero_de_classes): \n    numero_de_elementos = numero_de_elementos + frequencias[i] \n#& Calculando frequencias_acumuladas\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))\n    if i > 0:\n        frequencias_acumuladas.append(frequencias[i]+frequencias_acumuladas[i-1])\n    elif i == 0:",
+        "detail": "Calculadora01",
+        "documentation": {}
+    },
+    {
+        "label": "#numero_de_classes",
+        "kind": 5,
+        "importPath": "Calculadora01",
+        "description": "Calculadora01",
+        "peekOfCode": "#numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))\nfor i in range(numero_de_classes): \n    numero_de_elementos = numero_de_elementos + frequencias[i] \n#& Calculando frequencias_acumuladas\nfor i in range(numero_de_classes):\n#    frequencias.append(int(input(\"Digite a frequência da classe:\")))\n    if i > 0:\n        frequencias_acumuladas.append(frequencias[i]+frequencias_acumuladas[i-1])\n    elif i == 0:\n        frequencias_acumuladas.append(frequencias[i])",
         "detail": "Calculadora01",
         "documentation": {}
     },
@@ -217,7 +81,16 @@
         "kind": 5,
         "importPath": "Calculadora01",
         "description": "Calculadora01",
-        "peekOfCode": "media = media/numero_de_elementos\nfor i in range(numero_de_classes):\n    variancia_populacional = variancia_populacional + (((pontos_medios[i]-media)**2)*frequencias[i])/numero_de_elementos\n    variancia_amostral = variancia_amostral + (((pontos_medios[i]-media)**2)*frequencias[i])/(numero_de_elementos-1)\nfor i in range(numero_de_classes):\n    if frequencias_acumuladas[i] > (numero_de_elementos)/2:\n        classe_mediana = i\n        print(\"classe mediana é a nº\",i+1)\n        lt = float(input(\"Digite o limite inferior da classe mediana: \"))\n        #h = float(input(\"Digite a amplitude de classe: \"))",
+        "peekOfCode": "media = media/numero_de_elementos\n#& Calculando Variância (populacional e amostral) e Erro Padrão\nfor i in range(numero_de_classes):\n    variancia_populacional = variancia_populacional + (((pontos_medios[i]-media)**2)*frequencias[i])/numero_de_elementos\n    variancia_amostral = variancia_amostral + (((pontos_medios[i]-media)**2)*frequencias[i])/(numero_de_elementos-1)\nerro_padrao_amostral = sqrt(variancia_amostral)\n#& Calculando Mediana\nfor i in range(numero_de_classes):\n    if frequencias_acumuladas[i] > (numero_de_elementos)/2:\n        classe_mediana = i",
+        "detail": "Calculadora01",
+        "documentation": {}
+    },
+    {
+        "label": "erro_padrao_amostral",
+        "kind": 5,
+        "importPath": "Calculadora01",
+        "description": "Calculadora01",
+        "peekOfCode": "erro_padrao_amostral = sqrt(variancia_amostral)\n#& Calculando Mediana\nfor i in range(numero_de_classes):\n    if frequencias_acumuladas[i] > (numero_de_elementos)/2:\n        classe_mediana = i\n        print(\"classe mediana é a nº\",i+1)\n        lt = float(input(\"Digite o limite inferior da classe mediana: \"))\n        #h = float(input(\"Digite a amplitude de classe: \"))\n        #lt = li[i]\n        #h = Li[i] - li[i]",
         "detail": "Calculadora01",
         "documentation": {}
     },

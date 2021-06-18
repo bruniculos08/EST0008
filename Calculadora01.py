@@ -20,6 +20,7 @@ classe_percentil = []
 percentil = []
 k = 0
 h = 0.4
+j = 0
 
 #numero_de_classes = ceil(1 + 3.3*(log10(numero_de_elementos)))
 numero_de_classes = 11

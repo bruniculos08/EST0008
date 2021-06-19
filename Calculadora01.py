@@ -111,3 +111,4 @@ print("Numero de classes: ",numero_de_classes,"\nFrequencias: ",frequencias,"\nF
 plt.plot(pontos_medios, frequencias)
 plt.show()
 
+#^ Como definir um gráfico

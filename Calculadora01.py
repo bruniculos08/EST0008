@@ -10,6 +10,7 @@ frequencias_acumuladas, Li, li, quartil, classe_quartil, percentil, classe_perce
 #frequencias = [28,39,51,68,74,27,29,10,4,3,2]
 frequencias = [26,32,59,70,56,20,13,11,7,9,3]
 pontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]
+h = 0.4
 
 
 numero_de_classes = len(frequencias)

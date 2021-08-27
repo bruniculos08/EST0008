@@ -8,8 +8,8 @@ variancia_populacional, variancia_amostral, media, variancia_amostral, mediana, 
 frequencias_acumuladas, Li, li, quartil, classe_quartil, percentil, classe_percentil = [], [], [], [], [], [], []
 
 #frequencias = [28,39,51,68,74,27,29,10,4,3,2]
-frequencias = [26,32,59,70,56,20,13,11,7,9,3]
-pontos_medios = [15.2,15.6,16,16.4,16.8,17.2,17.6,18,18.4,18.8,19.2]
+frequencias = [1,1,1,1,1,1,1,1,1,1,1]
+pontos_medios = [5.8,5.1,5.7,6.4,6.1,5.1,5.4,4.8,5.2,4.9,5.5]
 h = 0.4
 
 
